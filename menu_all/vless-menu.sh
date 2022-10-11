@@ -55,13 +55,13 @@ case $v2ray in
 add-vless
 ;;
 2 |02)
-delvless
+del-vless
 ;;
 3 |03)
-renewvless
+renew-vless
 ;;
 4 |04)
-cekvless
+cek-vless
 ;;
 0 | 00)
 menu
