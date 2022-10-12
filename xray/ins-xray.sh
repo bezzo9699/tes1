@@ -526,14 +526,17 @@ systemctl enable runn
 systemctl restart runn
 
 sleep 1
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Bezzo99/tes1/main/xray/add-ws.sh" && chmod +x /usr/bin/add-ws
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Bezzo99/tes1/main/xray/add-vless.sh" && chmod +x /usr/bin/add-vless
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Bezzo99/tes1/main/xray/add-tr.sh" && chmod +x /usr/bin/add-tr
-wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/Bezzo99/tes1/main/xray/del-ws.sh" && chmod +x /usr/bin/del-user
-wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/Bezzo99/tes1/main/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
-wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/Bezzo99/tes1/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
-wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/Bezzo99/tes1/main/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
-wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/Bezzo99/tes1/main/xray/add-ssws.sh" && chmod +x /usr/bin/add-ssws
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/add-ws.sh" && chmod +x /usr/bin/add-ws
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/add-vless.sh" && chmod +x /usr/bin/add-vless
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/add-tr.sh" && chmod +x /usr/bin/add-tr
+wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/del-ws.sh" && chmod +x /usr/bin/del-user
+wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/del-ws.vless.sh" && chmod +x /usr/bin/del-vless
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/cek-vless.sh" && chmod +x /usr/bin/cek-vless
+wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
+wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/renew-vless.sh" && chmod +x /usr/bin/renew-vless
+wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
+wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/Bezzo9699/tes1/main/xray/add-ssws.sh" && chmod +x /usr/bin/add-ssws
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "xray/Vmess"
