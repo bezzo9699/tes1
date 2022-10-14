@@ -8,7 +8,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/Bezzo99/tes1/main/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/Bezzo9699/tes1/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -26,7 +26,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/Bezzo99/tes1/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/Bezzo9699/tes1/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -43,7 +43,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/Bezzo99/tes1/main/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/Bezzo9699/tes1/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -57,7 +57,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/Bezzo99/tes1/main/ip | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/Bezzo9699/tes1/main/ip | grep $MYIP | awk '{print $3}')
 fi
 
 
@@ -147,7 +147,7 @@ echo -e "□ Server IP           = ${IP}"
 echo -e "□ Clients Name        = $Name"
 echo -e "□ Exfire Script VPS   = $Exp"
 echo -e "□ Time Reboot VPS     = 00:00 ( Jam 12 Malam )"
-echo -e "□ AutoScript Free By  = HAMBA ALLAH 😇🙏👼"
+echo -e "□ AutoScript By  = THE KILL ╾━╤デ╦︻"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ STATUS LAYANAN ⇲                       \E[0m"
@@ -193,7 +193,7 @@ trojan-menu
 ;;
 5)
 clear
-add-ssws
+ssgrpc-menu
 ;;
 6)
 clear
