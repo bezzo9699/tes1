@@ -69,7 +69,7 @@ case "$x" in
    ;;
    2 | 02)
    clear
-   del-user 
+   del-ws 
    break
    ;;
    3 | 03)
