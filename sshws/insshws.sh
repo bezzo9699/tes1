@@ -17,7 +17,7 @@ chmod +x /usr/local/bin/ws-stunnel
 
 
 #System OpenSSH Websocket-SSH Python
-#wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/Bezzo99/tes1/main/sshws/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
+#wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/Bezzo9699/tes1/main/sshws/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
 
 #System Dropbear Websocket-SSH Python
 wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/Bezzo9699/tes1/main/sshws/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
