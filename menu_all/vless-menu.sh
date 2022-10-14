@@ -1,72 +1,93 @@
 #!/bin/bash
-# My Telegram : https://t.me/aink
-# ==========================================
-# Color
-RED='\033[0;31m'
-NC='\033[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-LIGHT='\033[0;37m'
-color1='\e[031;1m'
-color2='\e[34;1m'
-color3='\e[0m'
-DF='\e[39m'
-Bold='\e[1m'
-Blink='\e[5m'
-yell='\e[33m'
-red='\e[1;31m'
-green='\e[1;32m'
-blue='\e[1;34m'
-PURPLE='\e[1;95m'
-CYAN='\e[1;36m'
-Lred='\e[1;91m'
-Lgreen='\e[92m'
-Lyellow='\e[93m'
-white='\e[1;37m'
-NC='\e[0m'
-# ==========================================
-clear
-x="ok"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[41;1;39m                     ⇱ XRAY MENU ⇲              \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-rekk='Xray'
+dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
+biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+#########################
+green() { echo -e "\\033[32;1m${*}\\033[0m"; }
+red() { echo -e "\\033[31;1m${*}\\033[0m"; }
+cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
+if [ "$cekray" = "XRAY" ]; then
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;41;36m                     XRAY MENU                    \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+rekk='XRAY'
+kjj='xray'
+else
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;41;36m                     V2RAY MENU                     \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+
+rekk='V2RAY'
+kjj='v2ray'
+fi
+Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
+chck_pid(){
+	PID=`ps -ef |grep -v grep | grep $kjj |awk '{print $2}'`
+}
+menu_sts(){
+	if [[ -e /usr/bin/$kjj ]]; then
+		chck_pid
+		if [[ ! -z "${PID}" ]]; then
+			echo -e "Current status: ${Green_font_prefix} Installed${Font_color_suffix} & ${Green_font_prefix}Running${Font_color_suffix}"
+		else
+			echo -e "Current status: ${Green_font_prefix} Installed${Font_color_suffix} but ${Red_font_prefix}Not Running${Font_color_suffix}"
+		fi
+	#	cd "${ssr_folder}"
+	else
+		echo -e "Current status: ${Red_font_prefix}Not Installed${Font_color_suffix}"
+	fi
+}
+while true $x != "ok"
+do
+cek=/home/shws
+if [[ -f "$cek" ]]; then
+sts="\033[1;32m◉ \033[0m"
+else
+sts="\033[1;31m○ \033[0m"
+fi
+
+menu_sts
 echo -e "
-[${GREEN}01${NC}] ${color1}•${NC} Create $rekk Vless Websocket Account
-[${GREEN}02${NC}] ${color1}•${NC} Deleting $rekk Vless Websocket Account
-[${GREEN}03${NC}] ${color1}•${NC} Extending $rekk Vless Account Active Life
-[${GREEN}04${NC}] ${color1}•${NC} Check User Login $rekk
+[\033[0;32m01\033[0m] • Create $rekk Vless Websocket Account
+[\033[0;32m02\033[0m] • Deleting $rekk Vless Websocket Account
+[\033[0;32m03\033[0m] • Extending $rekk Vless Account Active Life
+[\033[0;32m04\033[0m] • Check User Login $rekk
 
-${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}
+\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m
 
-[${GREEN}00${NC}] ${color1}• ${NC}Kembali Ke Menu \033[1;32m<\033[1;33m<\033[1;31m<\033[1;31m"
+[00] • Back to Main Menu \033[1;32m<\033[1;33m<\033[1;31m<\033[1;31m"
 echo ""
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[41;1;39m                  ⇱ THEKILL PROJECT ⇲            \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e""
-read -p " Select menu :  "  v2ray
-echo -e ""
-case $v2ray in
-1 |01)
-add-vless
-;;
-2 |02)
-del-vless
-;;
-3 |03)
-renew-vless
-;;
-4 |04)
-cek-vless
-;;
-0 | 00)
-menu
-;;
-*)
-vless-menu
-;;
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo ""
+echo -ne "Select menu : "; read x
+
+case "$x" in 
+1 | 01)
+   clear
+   add-vless
+   break
+   ;;
+ 2 | 02)
+   clear
+   del-vless
+   break
+   ;;
+ 3 | 03)
+   clear
+   renew-vless
+   break
+   ;;
+ 4 | 04)
+   clear
+   cek-vless
+   break
+   ;;
+ 0 | 00)
+   clear
+   menu
+   break
+   ;;
+   *)
+   clear
 esac
+done
+#fim
