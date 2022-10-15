@@ -17,11 +17,11 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 #MYIP=$(wget -qO- https://ipv6.icanhazip.com);
 clear
 apt install jq curl -y
-DOMAIN=thekillzstore.tech
+DOMAIN=bezzo.my.id
 sub=$(</dev/urandom tr -dc a-z | head -c4)
-SUB_DOMAIN=${sub}.thekillzstore.tech
-CF_ID=bezzo9699@gmail.com
-CF_KEY=da3e57beb22acfd13192c5b820c2512300b34
+SUB_DOMAIN=${sub}.bezzo.my.id
+CF_ID=ubaidi9699@gmail.com
+CF_KEY=8419dff1fb7c355d187e64a22ddde5b82ebbe
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
