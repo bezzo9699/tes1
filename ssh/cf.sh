@@ -17,9 +17,9 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 #MYIP=$(wget -qO- https://ipv6.icanhazip.com);
 clear
 apt install jq curl -y
-DOMAIN=thekillzstore.tech
+DOMAIN=thekillstore.software
 sub=$(</dev/urandom tr -dc a-z | head -c4)
-SUB_DOMAIN=${sub}.thekillzstore.tech
+SUB_DOMAIN=${sub}.thekillstore.software
 CF_ID=bezzo9699@gmail.com
 CF_KEY=da3e57beb22acfd13192c5b820c2512300b34
 set -euo pipefail
