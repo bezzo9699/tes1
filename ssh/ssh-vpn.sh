@@ -255,6 +255,14 @@ cat> /etc/issue.net << END
 <font color="red"><b>============================</b></font><br> 
 <font color="white"><b>      PREMIUM SERVICE         </b></font><br> 
 <font color="red"><b>============================</b></font>
+ <font color="#ff0000">☣THE KILL SERVER☣</font><br>
+<font color="#ff0000">✮ No DDoS /Phishing</font><br>
+<font color="#ff0000">✮ No Torrent /Spam</font><br>
+<font color="#ff00ee">✮ No Over-Downloading</font><br>
+<font color="#ff00ee">✮ No Multilogin</font><br>
+<font color="#ff00ee">✮ No Proxy Abuse</font><br>
+<font color="#ff00ee">✮ 12:00AM Auto-Reboot</font><br>
+<font color="#a200ff">☭ Contact Person : https://wa.me/6281398356345 ☠</font><br>
 END
 
 #install bbr dan optimasi kernel
