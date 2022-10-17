@@ -167,6 +167,7 @@ echo -ne "[ ${green}INFO${NC} ] Memasang Domain.....  "
 #mkdir /var/lib/scrz-prem;
 #echo "IP=" >> /var/lib/scrz-prem/ipvps.conf
 #wget https://raw.githubusercontent.com/Bezzo9699/tes1/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
+#wget https://${akbarvpn}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
 
 
 #PERMISSION
